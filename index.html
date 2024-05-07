@@ -84,7 +84,7 @@
             <div class="col-xxl-3 col-xl-3 col-lg-4 col-md-2 col-sm-4 col-6">
               <div class="header__left d-flex">
                 <div class="logo">
-                  <a href="index.html">
+                  <a>
                     <img src="assets/img/logo/logo.png" alt="logo" />
                   </a>
                 </div>
@@ -399,7 +399,7 @@
         <div class="container">
           <div class="hero__content-wrapper mt-90">
             <div class="row align-items-center">
-              <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6">
+              <div class="col-xxl-6 col-xl-6 col-lg-10 col-md-10">
                 <div class="hero__content p-relative z-index-1">
                   <h3 class="hero__title">
                     <span>Learn from Experts</span>
@@ -420,7 +420,7 @@
                 </div>
               </div>
               <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6">
-                <div class="hero__thumb d-flex p-relative">
+                <div class="hero__thumb d-flex p-relative pl-50 pb-120">
                   <div class="hero__thumb-shape">
                     <img
                       class="hero-1-dot"
@@ -438,7 +438,73 @@
                       alt=""
                     />
                   </div>
-                  <div class="hero__thumb-big mr-30">
+                  <div>
+                    <div class="col-lg-12 col-md-4 col-sm-50 d-flex align-items-stretch mb-4 pt-20 ml-20">
+                      <div class="card p-4 w-100">
+                        <h2 class="text-center mb-4">Contact Us</h2>
+                        <h4 class="text-center mb-4">
+                          <!-- Book Free Design Consultation Today! -->
+                        </h4>
+                        <form onSubmit={handleSubmit}>
+                          <div class="form-group">
+                            <input
+                              type="text"
+                              name="name"
+                              class="form-control rounded"
+                              placeholder="Your Name"
+                              onChange={handleInputChange} 
+                            />
+                          </div><br/>
+                          <div class="form-group">
+                            <input
+                              type="email"
+                              name="email"
+                              class="form-control rounded"
+                              placeholder="Your Email"
+                              
+                              onChange={handleInputChange}
+                            />
+                          </div><br/>
+                          <div class="form-group">
+                            <input
+                              type="number"
+                              name="number"
+                              class="form-control rounded"
+                              placeholder="Your Number"
+                              value={formData.number}
+                              onChange={handleInputChange}
+                            />
+                          </div><br/>
+                          <div class="form-group">
+                            <textarea
+                              name="message"
+                              class="form-control rounded"
+                              placeholder="Your Message"
+                              value={formData.message}
+                              onChange={handleInputChange}
+                            ></textarea>
+                          </div><br/>
+                          <div class="text-center">
+                            <button
+                              type="submit"
+                              
+                              class="btn btn-primary mb-4"
+                            >
+                              <!-- Get Free Design Consultation Today! -->
+                            </button><br/>
+                            <div class="d-flex align-items-center justify-content-center">
+                              <i
+                                class="fas fa-phone-alt mr-2"
+                                
+                              ></i>
+                              <p class="m-0">+91 9881102067</p>
+                            </div><br/>
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- <div class="hero__thumb-big mr-30">
                     <img src="assets/img/hero/hero-1.jpg" alt="" />
                     <div class="hero__quote hero__quote-animation">
                       <span>Tomorrow is our</span>
@@ -447,7 +513,7 @@
                   </div>
                   <div class="hero__thumb-sm mt-50 d-none d-lg-block">
                     <img src="assets/img/hero/hero-sm-1.jpg" alt="" />
-                  </div>
+                  </div> -->
                 </div>
               </div>
             </div>
