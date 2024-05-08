@@ -438,73 +438,7 @@
                       alt=""
                     />
                   </div>
-                  <div>
-                    <div class="col-lg-12 col-md-4 col-sm-50 d-flex align-items-stretch mb-4 pt-20 ml-20">
-                      <div class="card p-4 w-100">
-                        <h2 class="text-center mb-4">Contact Us</h2>
-                        <h4 class="text-center mb-4">
-                          <!-- Book Free Design Consultation Today! -->
-                        </h4>
-                        <form onSubmit={handleSubmit}>
-                          <div class="form-group">
-                            <input
-                              type="text"
-                              name="name"
-                              class="form-control rounded"
-                              placeholder="Your Name"
-                              onChange={handleInputChange} 
-                            />
-                          </div><br/>
-                          <div class="form-group">
-                            <input
-                              type="email"
-                              name="email"
-                              class="form-control rounded"
-                              placeholder="Your Email"
-                              
-                              onChange={handleInputChange}
-                            />
-                          </div><br/>
-                          <div class="form-group">
-                            <input
-                              type="number"
-                              name="number"
-                              class="form-control rounded"
-                              placeholder="Your Number"
-                              value={formData.number}
-                              onChange={handleInputChange}
-                            />
-                          </div><br/>
-                          <div class="form-group">
-                            <textarea
-                              name="message"
-                              class="form-control rounded"
-                              placeholder="Your Message"
-                              value={formData.message}
-                              onChange={handleInputChange}
-                            ></textarea>
-                          </div><br/>
-                          <div class="text-center">
-                            <button
-                              type="submit"
-                              
-                              class="btn btn-primary mb-4"
-                            >
-                              <!-- Get Free Design Consultation Today! -->
-                            </button><br/>
-                            <div class="d-flex align-items-center justify-content-center">
-                              <i
-                                class="fas fa-phone-alt mr-2"
-                                
-                              ></i>
-                              <p class="m-0">+91 9881102067</p>
-                            </div><br/>
-                          </div>
-                        </form>
-                      </div>
-                    </div>
-                  </div>
-                  <!-- <div class="hero__thumb-big mr-30">
+                  <div class="hero__thumb-big mr-30">
                     <img src="assets/img/hero/hero-1.jpg" alt="" />
                     <div class="hero__quote hero__quote-animation">
                       <span>Tomorrow is our</span>
@@ -513,7 +447,7 @@
                   </div>
                   <div class="hero__thumb-sm mt-50 d-none d-lg-block">
                     <img src="assets/img/hero/hero-sm-1.jpg" alt="" />
-                  </div> -->
+                  </div>
                 </div>
               </div>
             </div>
@@ -522,6 +456,77 @@
       </section>
       <!-- hero area end -->
 
+      <!-- Form section start -->
+
+      <section>
+        <div>
+          <div class="col-lg-9 col-md-5 d-flex align-items-stretch pl-200 ml-100 mb-4 pt-50 ml-20">
+            <div class="card p-4 w-100">
+              <h2 class="text-center mb-4">Contact Us</h2>
+              <h4 class="text-center mb-4">
+                <!-- Book Free Design Consultation Today! -->
+              </h4>
+              <form id="myForm">
+                <div class="form-group">
+                  <input
+                    type="text"
+                    name="name"
+                    class="form-control rounded"
+                    placeholder="Your Name"
+                    
+                  />
+                </div><br/>
+                <div class="form-group">
+                  <input
+                    type="email"
+                    name="email"
+                    class="form-control rounded"
+                    placeholder="Your Email"
+                    
+                  />
+                </div><br/>
+                <div class="form-group">
+                  <input
+                    type="number"
+                    name="number"
+                    class="form-control rounded"
+                    placeholder="Your Number"
+                  />
+                </div><br/>
+                <div class="form-group">
+                  <textarea
+                    name="message"
+                    class="form-control rounded"
+                    placeholder="Your Message"
+                   
+                  ></textarea>
+                </div><br/>
+                <div class="text-center">
+                  <button
+                    type="submit"
+                    
+                    class="btn btn-primary mb-4"
+                  >
+                   Submit
+                  </button>
+                  <div id="response"></div>
+                  <br/>
+                  <div class="d-flex align-items-center justify-content-center">
+                    <i
+                      class="fas fa-phone-alt mr-2"
+                      
+                    ></i>
+                    <p class="m-0">+91 9881102067</p>
+                  </div><br/>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- form section end -->
+
       <!-- category area start -->
       <section class="category__area pt-120 pb-70">
         <div class="container">
@@ -529,11 +534,11 @@
             <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-8">
               <div class="section__title-wrapper mb-45">
                 <h2 class="section__title">
-                  Explore <br />Our
+                 Program Highlights
                   <span class="yellow-bg"
-                    >Popular
+                    >
                     <img src="assets/img/shape/yellow-bg-2.png" alt="" /> </span
-                  >Courses
+                  >
                 </h2>
               </div>
             </div>
@@ -552,7 +557,7 @@
               <div
                 class="category__item mb-30 transition-3 d-flex align-items-center"
               >
-                <div class="category__icon mr-30">
+                <!-- <div class="category__icon mr-30">
                   <svg viewBox="0 0 512 512">
                     <g>
                       <path
@@ -569,13 +574,13 @@
                       />
                     </g>
                   </svg>
-                </div>
+                </div> -->
                 <div class="category__content">
                   <h4 class="category__title">
                     <!-- <a href="course-details.html">Data Science</a> -->
-                    Data Science
+                    Experienced Case Studies & Projects
                   </h4>
-                  <p>Data is Everything</p>
+                  <!-- <p>Data is Everything</p> -->
                 </div>
               </div>
             </div>
@@ -583,30 +588,26 @@
               <div
                 class="category__item mb-30 transition-3 d-flex align-items-center"
               >
-                <div class="category__icon mr-30">
+                <!-- <div class="category__icon mr-30">
                   <svg viewBox="0 0 512 512">
                     <g>
                       <path
-                        class="st0"
-                        d="M111.3,491.6C60.1,487.1,20,444.2,20,392V223.7c0-31.2,14.6-60.6,39.4-79.5l136-103.7   c35.8-27.3,85.5-27.3,121.3,0l9.2,7c-24.6-2.4-49.8,4.2-70.5,20L93.6,190.8C85,197.4,80,207.5,80,218.3V419   C80,447.6,92,473.4,111.3,491.6L111.3,491.6z"
+                        class="st4"
+                        d="M438,512c-40.8,0-74-33.2-74-74V74c0-40.8,33.2-74,74-74s74,33.2,74,74v364C512,478.8,478.8,512,438,512z    M438,40c-18.7,0-34,15.3-34,34v364c0,18.7,15.3,34,34,34s34-15.3,34-34V74C472,55.3,456.7,40,438,40z M74,512   c-40.8,0-74-33.2-74-74v-82c0-40.8,33.2-74,74-74s74,33.2,74,74v82C148,478.8,114.8,512,74,512z M74,322c-18.7,0-34,15.3-34,34v82   c0,18.7,15.3,34,34,34s34-15.3,34-34v-82C108,337.3,92.7,322,74,322z M256,512c-40.8,0-74-33.2-74-74V213c0-40.8,33.2-74,74-74   s74,33.2,74,74v225C330,478.8,296.8,512,256,512z M256,179c-18.7,0-34,15.3-34,34v225c0,18.7,15.3,34,34,34s34-15.3,34-34V213   C290,194.3,274.7,179,256,179z"
                       />
                       <path
-                        class="st1"
-                        d="M392,512H120C53.8,512,0,458.1,0,392V223.7c0-37.2,17.7-72.9,47.2-95.4l136-103.7   c42.8-32.7,102.7-32.7,145.5,0L372,57.5V32c0-11,9-20,20-20s20,9,20,20v65.9c0,7.6-4.3,14.5-11.1,17.9c-6.8,3.4-15,2.6-21-2   l-75.4-57.4c-28.6-21.8-68.5-21.8-97,0l-136,103.7c-19.7,15-31.5,38.8-31.5,63.6V392c0,44.1,35.9,80,80,80h272   c44.1,0,80-35.9,80-80V223.7c0-25.1-11.6-49-31.1-63.8c-8.8-6.7-10.5-19.2-3.8-28s19.3-10.5,28-3.8c29.3,22.4,46.9,58.1,46.9,95.6   V392C512,458.1,458.2,512,392,512z"
-                      />
-                      <path
-                        class="st2"
-                        d="M241,256c0,13.8-11.2,25-25,25s-25-11.2-25-25s11.2-25,25-25S241,242.2,241,256z M296,231   c-13.8,0-25,11.2-25,25c0,13.8,11.2,25,25,25s25-11.2,25-25C321,242.2,309.8,231,296,231z M216,311c-13.8,0-25,11.2-25,25   s11.2,25,25,25s25-11.2,25-25S229.8,311,216,311z M296,311c-13.8,0-25,11.2-25,25s11.2,25,25,25s25-11.2,25-25S309.8,311,296,311z"
+                        class="st5"
+                        d="M139,162.3c0-31.2-27.8-56.7-61.9-56.7c-14.5,0-25.1-7-25.1-16.7c0-9.2,7.4-16.7,16.5-16.7   c9.2,0,21.1,1,40.2,8.4c10.3,4,21.9-1.1,25.9-11.4s-1.1-21.9-11.4-25.9c-9.9-3.9-18.6-6.4-26.2-8.1V20C97,9,88,0,77,0S57,9,57,20   v13.5C31.3,38.9,12,61.7,12,89c0,32.3,28,56.7,65.1,56.7c11.9,0,21.9,7.6,21.9,16.7c0,8.9-8.3,16.7-17.7,16.7   c-7.3,0-25.8-2.7-43.9-9.9c-10.3-4.1-21.9,0.9-26,11.2s0.9,21.9,11.2,26c11.6,4.6,23.7,7.9,34.4,10V228c0,11,9,20,20,20s20-9,20-20   v-11.2c9.1-2.6,17.6-7.4,24.6-14.2C132.8,191.9,139,177.6,139,162.3L139,162.3z"
                       />
                     </g>
                   </svg>
-                </div>
+                </div> -->
                 <div class="category__content">
                   <h4 class="category__title">
-                    <!-- <a href="course-details.html">Business</a> -->
-                    Business
+                    <!-- <a href="course-details.html">Finance</a> -->
+                    Hands-on Capstone Project
                   </h4>
-                  <p>Improve your business</p>
+                  <!-- <p>Fun & Challenging</p> -->
                 </div>
               </div>
             </div>
@@ -614,7 +615,7 @@
               <div
                 class="category__item mb-30 transition-3 d-flex align-items-center"
               >
-                <div class="category__icon mr-30">
+                <!-- <div class="category__icon mr-30">
                   <svg viewBox="0 0 512 512">
                     <g>
                       <path
@@ -631,13 +632,13 @@
                       />
                     </g>
                   </svg>
-                </div>
+                </div> -->
                 <div class="category__content">
                   <h4 class="category__title">
                     <!-- <a href="course-details.html">Art & Design</a> -->
-                    Art & Design
+                    Customized Tracks for Focused Learning
                   </h4>
-                  <p>Fun & Challenging</p>
+                  <!-- <p>Fun & Challenging</p> -->
                 </div>
               </div>
             </div>
@@ -645,30 +646,85 @@
               <div
                 class="category__item mb-30 transition-3 d-flex align-items-center"
               >
-                <div class="category__icon mr-30">
+                <!-- <div class="category__icon mr-30">
+                  <svg viewBox="0 0 512 512">
+                    <g>
+                      <path
+                        class="st4"
+                        d="M438,512c-40.8,0-74-33.2-74-74V74c0-40.8,33.2-74,74-74s74,33.2,74,74v364C512,478.8,478.8,512,438,512z    M438,40c-18.7,0-34,15.3-34,34v364c0,18.7,15.3,34,34,34s34-15.3,34-34V74C472,55.3,456.7,40,438,40z M74,512   c-40.8,0-74-33.2-74-74v-82c0-40.8,33.2-74,74-74s74,33.2,74,74v82C148,478.8,114.8,512,74,512z M74,322c-18.7,0-34,15.3-34,34v82   c0,18.7,15.3,34,34,34s34-15.3,34-34v-82C108,337.3,92.7,322,74,322z M256,512c-40.8,0-74-33.2-74-74V213c0-40.8,33.2-74,74-74   s74,33.2,74,74v225C330,478.8,296.8,512,256,512z M256,179c-18.7,0-34,15.3-34,34v225c0,18.7,15.3,34,34,34s34-15.3,34-34V213   C290,194.3,274.7,179,256,179z"
+                      />
+                      <path
+                        class="st5"
+                        d="M139,162.3c0-31.2-27.8-56.7-61.9-56.7c-14.5,0-25.1-7-25.1-16.7c0-9.2,7.4-16.7,16.5-16.7   c9.2,0,21.1,1,40.2,8.4c10.3,4,21.9-1.1,25.9-11.4s-1.1-21.9-11.4-25.9c-9.9-3.9-18.6-6.4-26.2-8.1V20C97,9,88,0,77,0S57,9,57,20   v13.5C31.3,38.9,12,61.7,12,89c0,32.3,28,56.7,65.1,56.7c11.9,0,21.9,7.6,21.9,16.7c0,8.9-8.3,16.7-17.7,16.7   c-7.3,0-25.8-2.7-43.9-9.9c-10.3-4.1-21.9,0.9-26,11.2s0.9,21.9,11.2,26c11.6,4.6,23.7,7.9,34.4,10V228c0,11,9,20,20,20s20-9,20-20   v-11.2c9.1-2.6,17.6-7.4,24.6-14.2C132.8,191.9,139,177.6,139,162.3L139,162.3z"
+                      />
+                    </g>
+                  </svg>
+                </div> -->
+                <div class="category__content">
+                  <h4 class="category__title">
+                    <!-- <a href="course-details.html">Finance</a> -->
+                    Learn from renowned academicians and industry professionals.
+                  </h4>
+                  <!-- <p>Fun & Challenging</p> -->
+                </div>
+              </div>
+            </div>
+            <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-6">
+              <div
+                class="category__item mb-30 transition-3 d-flex align-items-center"
+              >
+                <!-- <div class="category__icon mr-30">
+                  <svg viewBox="0 0 512 512">
+                    <g>
+                      <path
+                        class="st4"
+                        d="M438,512c-40.8,0-74-33.2-74-74V74c0-40.8,33.2-74,74-74s74,33.2,74,74v364C512,478.8,478.8,512,438,512z    M438,40c-18.7,0-34,15.3-34,34v364c0,18.7,15.3,34,34,34s34-15.3,34-34V74C472,55.3,456.7,40,438,40z M74,512   c-40.8,0-74-33.2-74-74v-82c0-40.8,33.2-74,74-74s74,33.2,74,74v82C148,478.8,114.8,512,74,512z M74,322c-18.7,0-34,15.3-34,34v82   c0,18.7,15.3,34,34,34s34-15.3,34-34v-82C108,337.3,92.7,322,74,322z M256,512c-40.8,0-74-33.2-74-74V213c0-40.8,33.2-74,74-74   s74,33.2,74,74v225C330,478.8,296.8,512,256,512z M256,179c-18.7,0-34,15.3-34,34v225c0,18.7,15.3,34,34,34s34-15.3,34-34V213   C290,194.3,274.7,179,256,179z"
+                      />
+                      <path
+                        class="st5"
+                        d="M139,162.3c0-31.2-27.8-56.7-61.9-56.7c-14.5,0-25.1-7-25.1-16.7c0-9.2,7.4-16.7,16.5-16.7   c9.2,0,21.1,1,40.2,8.4c10.3,4,21.9-1.1,25.9-11.4s-1.1-21.9-11.4-25.9c-9.9-3.9-18.6-6.4-26.2-8.1V20C97,9,88,0,77,0S57,9,57,20   v13.5C31.3,38.9,12,61.7,12,89c0,32.3,28,56.7,65.1,56.7c11.9,0,21.9,7.6,21.9,16.7c0,8.9-8.3,16.7-17.7,16.7   c-7.3,0-25.8-2.7-43.9-9.9c-10.3-4.1-21.9,0.9-26,11.2s0.9,21.9,11.2,26c11.6,4.6,23.7,7.9,34.4,10V228c0,11,9,20,20,20s20-9,20-20   v-11.2c9.1-2.6,17.6-7.4,24.6-14.2C132.8,191.9,139,177.6,139,162.3L139,162.3z"
+                      />
+                    </g>
+                  </svg>
+                </div> -->
+                <div class="category__content">
+                  <h4 class="category__title">
+                    <!-- <a href="course-details.html">Finance</a> -->
+                    One free, no-questions-asked deferral for better flexibility.
+                  </h4>
+                  <!-- <p>Fun & Challenging</p> -->
+                </div>
+              </div>
+            </div>
+            <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-6">
+              <div
+                class="category__item mb-30 transition-3 d-flex align-items-center"
+              >
+                <!-- <div class="category__icon mr-30">
                   <svg viewBox="0 0 512 512">
                     <g>
                       <path
                         class="st0"
-                        d="M106.1,341.9V120c0-55.2,44.8-100,100-100h-61c-55.2,0-100,44.8-100,100v221.9c0,55.2,44.8,100,100,100h61   C150.8,441.8,106.1,397.1,106.1,341.9z"
+                        d="M111.3,491.6C60.1,487.1,20,444.2,20,392V223.7c0-31.2,14.6-60.6,39.4-79.5l136-103.7   c35.8-27.3,85.5-27.3,121.3,0l9.2,7c-24.6-2.4-49.8,4.2-70.5,20L93.6,190.8C85,197.4,80,207.5,80,218.3V419   C80,447.6,92,473.4,111.3,491.6L111.3,491.6z"
                       />
                       <path
                         class="st1"
-                        d="M442.8,512c-10.5,0-20.9-3.9-29.2-11.3l-49.9-43.9c-8.3-7.3-9.1-19.9-1.8-28.2c7.3-8.3,19.9-9.1,28.2-1.8   l49.9,43.9c0.1,0,0.1,0.1,0.2,0.1c0.5,0.4,1.9,1.7,4.3,0.7c2.4-1.1,2.4-3,2.4-3.7V120c0-44.1-35.9-80-80-80H145   c-44.1,0-80,35.9-80,80v221.9c0,44.1,35.9,80,80,80h154c11,0,20,9,20,20s-9,20-20,20H145c-66.1,0-120-53.8-120-120V120   C25.1,53.8,78.9,0,145,0h222c66.1,0,120,53.8,120,120v348c0,17.6-10,33-26.1,40.2C455,510.7,448.8,512,442.8,512L442.8,512z    M350.7,264c-9.3-5.9-21.7-3.2-27.6,6.1c-0.2,0.4-25.1,38.7-67.1,38.7s-67.9-38.3-68.1-38.7c-5.9-9.3-18.3-12.1-27.6-6.1   c-9.3,5.9-12.1,18.3-6.1,27.6c1.5,2.3,38.2,57.2,101.8,57.2s99.3-54.9,100.8-57.2C362.8,282.3,360,270,350.7,264z"
+                        d="M392,512H120C53.8,512,0,458.1,0,392V223.7c0-37.2,17.7-72.9,47.2-95.4l136-103.7   c42.8-32.7,102.7-32.7,145.5,0L372,57.5V32c0-11,9-20,20-20s20,9,20,20v65.9c0,7.6-4.3,14.5-11.1,17.9c-6.8,3.4-15,2.6-21-2   l-75.4-57.4c-28.6-21.8-68.5-21.8-97,0l-136,103.7c-19.7,15-31.5,38.8-31.5,63.6V392c0,44.1,35.9,80,80,80h272   c44.1,0,80-35.9,80-80V223.7c0-25.1-11.6-49-31.1-63.8c-8.8-6.7-10.5-19.2-3.8-28s19.3-10.5,28-3.8c29.3,22.4,46.9,58.1,46.9,95.6   V392C512,458.1,458.2,512,392,512z"
                       />
                       <path
                         class="st2"
-                        d="M334,211.9c-11,0-20-9-20-20v-55c0-11,9-20,20-20s20,9,20,20v55C354,203,345,211.9,334,211.9z M199,191.9v-55   c0-11-9-20-20-20s-20,9-20,20v55c0,11,9,20,20,20S199,203,199,191.9z"
+                        d="M241,256c0,13.8-11.2,25-25,25s-25-11.2-25-25s11.2-25,25-25S241,242.2,241,256z M296,231   c-13.8,0-25,11.2-25,25c0,13.8,11.2,25,25,25s25-11.2,25-25C321,242.2,309.8,231,296,231z M216,311c-13.8,0-25,11.2-25,25   s11.2,25,25,25s25-11.2,25-25S229.8,311,216,311z M296,311c-13.8,0-25,11.2-25,25s11.2,25,25,25s25-11.2,25-25S309.8,311,296,311z"
                       />
                     </g>
                   </svg>
-                </div>
+                </div> -->
                 <div class="category__content">
                   <h4 class="category__title">
-                    <!-- <a href="course-details.html">Lifestyle</a> -->
-                    Lifestyle
+                    <!-- <a href="course-details.html">Business</a> -->
+                    Solve real-world case studies Work on industry projects and simulations
+
                   </h4>
-                  <p>New Skills, New You</p>
+                  <!-- <p>Improve your business</p> -->
                 </div>
               </div>
             </div>
@@ -676,7 +732,62 @@
               <div
                 class="category__item mb-30 transition-3 d-flex align-items-center"
               >
-                <div class="category__icon mr-30">
+                <!-- <div class="category__icon mr-30">
+                  <svg viewBox="0 0 512 512">
+                    <g>
+                      <path
+                        class="st4"
+                        d="M438,512c-40.8,0-74-33.2-74-74V74c0-40.8,33.2-74,74-74s74,33.2,74,74v364C512,478.8,478.8,512,438,512z    M438,40c-18.7,0-34,15.3-34,34v364c0,18.7,15.3,34,34,34s34-15.3,34-34V74C472,55.3,456.7,40,438,40z M74,512   c-40.8,0-74-33.2-74-74v-82c0-40.8,33.2-74,74-74s74,33.2,74,74v82C148,478.8,114.8,512,74,512z M74,322c-18.7,0-34,15.3-34,34v82   c0,18.7,15.3,34,34,34s34-15.3,34-34v-82C108,337.3,92.7,322,74,322z M256,512c-40.8,0-74-33.2-74-74V213c0-40.8,33.2-74,74-74   s74,33.2,74,74v225C330,478.8,296.8,512,256,512z M256,179c-18.7,0-34,15.3-34,34v225c0,18.7,15.3,34,34,34s34-15.3,34-34V213   C290,194.3,274.7,179,256,179z"
+                      />
+                      <path
+                        class="st5"
+                        d="M139,162.3c0-31.2-27.8-56.7-61.9-56.7c-14.5,0-25.1-7-25.1-16.7c0-9.2,7.4-16.7,16.5-16.7   c9.2,0,21.1,1,40.2,8.4c10.3,4,21.9-1.1,25.9-11.4s-1.1-21.9-11.4-25.9c-9.9-3.9-18.6-6.4-26.2-8.1V20C97,9,88,0,77,0S57,9,57,20   v13.5C31.3,38.9,12,61.7,12,89c0,32.3,28,56.7,65.1,56.7c11.9,0,21.9,7.6,21.9,16.7c0,8.9-8.3,16.7-17.7,16.7   c-7.3,0-25.8-2.7-43.9-9.9c-10.3-4.1-21.9,0.9-26,11.2s0.9,21.9,11.2,26c11.6,4.6,23.7,7.9,34.4,10V228c0,11,9,20,20,20s20-9,20-20   v-11.2c9.1-2.6,17.6-7.4,24.6-14.2C132.8,191.9,139,177.6,139,162.3L139,162.3z"
+                      />
+                    </g>
+                  </svg>
+                </div> -->
+                <div class="category__content">
+                  <h4 class="category__title">
+                    <!-- <a href="course-details.html">Finance</a> -->
+                    Industry Expert Insights
+                  </h4>
+                  <!-- <p>Fun & Challenging</p> -->
+                </div>
+              </div>
+            </div>
+            
+            <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-6">
+              <div
+                class="category__item mb-30 transition-3 d-flex align-items-center"
+              >
+                <!-- <div class="category__icon mr-30">
+                  <svg viewBox="0 0 512 512">
+                    <g>
+                      <path
+                        class="st4"
+                        d="M438,512c-40.8,0-74-33.2-74-74V74c0-40.8,33.2-74,74-74s74,33.2,74,74v364C512,478.8,478.8,512,438,512z    M438,40c-18.7,0-34,15.3-34,34v364c0,18.7,15.3,34,34,34s34-15.3,34-34V74C472,55.3,456.7,40,438,40z M74,512   c-40.8,0-74-33.2-74-74v-82c0-40.8,33.2-74,74-74s74,33.2,74,74v82C148,478.8,114.8,512,74,512z M74,322c-18.7,0-34,15.3-34,34v82   c0,18.7,15.3,34,34,34s34-15.3,34-34v-82C108,337.3,92.7,322,74,322z M256,512c-40.8,0-74-33.2-74-74V213c0-40.8,33.2-74,74-74   s74,33.2,74,74v225C330,478.8,296.8,512,256,512z M256,179c-18.7,0-34,15.3-34,34v225c0,18.7,15.3,34,34,34s34-15.3,34-34V213   C290,194.3,274.7,179,256,179z"
+                      />
+                      <path
+                        class="st5"
+                        d="M139,162.3c0-31.2-27.8-56.7-61.9-56.7c-14.5,0-25.1-7-25.1-16.7c0-9.2,7.4-16.7,16.5-16.7   c9.2,0,21.1,1,40.2,8.4c10.3,4,21.9-1.1,25.9-11.4s-1.1-21.9-11.4-25.9c-9.9-3.9-18.6-6.4-26.2-8.1V20C97,9,88,0,77,0S57,9,57,20   v13.5C31.3,38.9,12,61.7,12,89c0,32.3,28,56.7,65.1,56.7c11.9,0,21.9,7.6,21.9,16.7c0,8.9-8.3,16.7-17.7,16.7   c-7.3,0-25.8-2.7-43.9-9.9c-10.3-4.1-21.9,0.9-26,11.2s0.9,21.9,11.2,26c11.6,4.6,23.7,7.9,34.4,10V228c0,11,9,20,20,20s20-9,20-20   v-11.2c9.1-2.6,17.6-7.4,24.6-14.2C132.8,191.9,139,177.6,139,162.3L139,162.3z"
+                      />
+                    </g>
+                  </svg>
+                </div> -->
+                <div class="category__content">
+                  <h4 class="category__title">
+                    <!-- <a href="course-details.html">Finance</a> -->
+                    Deferral Policy
+                  </h4>
+                  <!-- <p>Fun & Challenging</p> -->
+                </div>
+              </div>
+            </div>
+            <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-6">
+              <div
+                class="category__item mb-30 transition-3 d-flex align-items-center"
+              >
+                <!-- <div class="category__icon mr-30">
                   <svg viewBox="0 0 512 512">
                     <g>
                       <path
@@ -693,13 +804,13 @@
                       />
                     </g>
                   </svg>
-                </div>
+                </div> -->
                 <div class="category__content">
                   <h4 class="category__title">
                     <!-- <a href="course-details.html">Marketing</a> -->
-                    Marketing
+                    Comprehensive Digital Marketing Toolbox
                   </h4>
-                  <p>Improve your business</p>
+                  <!-- <p>Improve your business</p> -->
                 </div>
               </div>
             </div>
@@ -707,7 +818,40 @@
               <div
                 class="category__item mb-30 transition-3 d-flex align-items-center"
               >
-                <div class="category__icon mr-30">
+                <!-- <div class="category__icon mr-30">
+                  <svg viewBox="0 0 512 512">
+                    <g>
+                      <path
+                        class="st0"
+                        d="M106.1,341.9V120c0-55.2,44.8-100,100-100h-61c-55.2,0-100,44.8-100,100v221.9c0,55.2,44.8,100,100,100h61   C150.8,441.8,106.1,397.1,106.1,341.9z"
+                      />
+                      <path
+                        class="st1"
+                        d="M442.8,512c-10.5,0-20.9-3.9-29.2-11.3l-49.9-43.9c-8.3-7.3-9.1-19.9-1.8-28.2c7.3-8.3,19.9-9.1,28.2-1.8   l49.9,43.9c0.1,0,0.1,0.1,0.2,0.1c0.5,0.4,1.9,1.7,4.3,0.7c2.4-1.1,2.4-3,2.4-3.7V120c0-44.1-35.9-80-80-80H145   c-44.1,0-80,35.9-80,80v221.9c0,44.1,35.9,80,80,80h154c11,0,20,9,20,20s-9,20-20,20H145c-66.1,0-120-53.8-120-120V120   C25.1,53.8,78.9,0,145,0h222c66.1,0,120,53.8,120,120v348c0,17.6-10,33-26.1,40.2C455,510.7,448.8,512,442.8,512L442.8,512z    M350.7,264c-9.3-5.9-21.7-3.2-27.6,6.1c-0.2,0.4-25.1,38.7-67.1,38.7s-67.9-38.3-68.1-38.7c-5.9-9.3-18.3-12.1-27.6-6.1   c-9.3,5.9-12.1,18.3-6.1,27.6c1.5,2.3,38.2,57.2,101.8,57.2s99.3-54.9,100.8-57.2C362.8,282.3,360,270,350.7,264z"
+                      />
+                      <path
+                        class="st2"
+                        d="M334,211.9c-11,0-20-9-20-20v-55c0-11,9-20,20-20s20,9,20,20v55C354,203,345,211.9,334,211.9z M199,191.9v-55   c0-11-9-20-20-20s-20,9-20,20v55c0,11,9,20,20,20S199,203,199,191.9z"
+                      />
+                    </g>
+                  </svg>
+                </div> -->
+                <div class="category__content">
+                  <h4 class="category__title">
+                    <!-- <a href="course-details.html">Lifestyle</a> -->
+                    Executive Track
+                  </h4>
+                  <p> Learn digital marketing basics, campaign execution, and hands-on tools.
+                    Management Track: Learn to build, run, and optimize digital marketing campaigns.
+                    </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-6">
+              <div
+                class="category__item mb-30 transition-3 d-flex align-items-center"
+              >
+                <!-- <div class="category__icon mr-30">
                   <svg viewBox="0 0 512 512">
                     <g>
                       <path
@@ -720,13 +864,41 @@
                       />
                     </g>
                   </svg>
-                </div>
+                </div> -->
                 <div class="category__content">
                   <h4 class="category__title">
                     <!-- <a href="course-details.html">Finance</a> -->
-                    Finance
+                    Hands-on experience with multiple tools, including SEO, SMM, Analytics, and more.
                   </h4>
-                  <p>Fun & Challenging</p>
+                  <!-- <p>Fun & Challenging</p> -->
+                </div>
+              </div>
+            </div>
+
+            <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-6">
+              <div
+                class="category__item mb-30 transition-3 d-flex align-items-center"
+              >
+                <!-- <div class="category__icon mr-30">
+                  <svg viewBox="0 0 512 512">
+                    <g>
+                      <path
+                        class="st4"
+                        d="M438,512c-40.8,0-74-33.2-74-74V74c0-40.8,33.2-74,74-74s74,33.2,74,74v364C512,478.8,478.8,512,438,512z    M438,40c-18.7,0-34,15.3-34,34v364c0,18.7,15.3,34,34,34s34-15.3,34-34V74C472,55.3,456.7,40,438,40z M74,512   c-40.8,0-74-33.2-74-74v-82c0-40.8,33.2-74,74-74s74,33.2,74,74v82C148,478.8,114.8,512,74,512z M74,322c-18.7,0-34,15.3-34,34v82   c0,18.7,15.3,34,34,34s34-15.3,34-34v-82C108,337.3,92.7,322,74,322z M256,512c-40.8,0-74-33.2-74-74V213c0-40.8,33.2-74,74-74   s74,33.2,74,74v225C330,478.8,296.8,512,256,512z M256,179c-18.7,0-34,15.3-34,34v225c0,18.7,15.3,34,34,34s34-15.3,34-34V213   C290,194.3,274.7,179,256,179z"
+                      />
+                      <path
+                        class="st5"
+                        d="M139,162.3c0-31.2-27.8-56.7-61.9-56.7c-14.5,0-25.1-7-25.1-16.7c0-9.2,7.4-16.7,16.5-16.7   c9.2,0,21.1,1,40.2,8.4c10.3,4,21.9-1.1,25.9-11.4s-1.1-21.9-11.4-25.9c-9.9-3.9-18.6-6.4-26.2-8.1V20C97,9,88,0,77,0S57,9,57,20   v13.5C31.3,38.9,12,61.7,12,89c0,32.3,28,56.7,65.1,56.7c11.9,0,21.9,7.6,21.9,16.7c0,8.9-8.3,16.7-17.7,16.7   c-7.3,0-25.8-2.7-43.9-9.9c-10.3-4.1-21.9,0.9-26,11.2s0.9,21.9,11.2,26c11.6,4.6,23.7,7.9,34.4,10V228c0,11,9,20,20,20s20-9,20-20   v-11.2c9.1-2.6,17.6-7.4,24.6-14.2C132.8,191.9,139,177.6,139,162.3L139,162.3z"
+                      />
+                    </g>
+                  </svg>
+                </div> -->
+                <div class="category__content">
+                  <h4 class="category__title">
+                    <!-- <a href="course-details.html">Finance</a> -->
+                    Apply learnings through a comprehensive capstone project, simulating a real-world digital marketing campaign.
+                  </h4>
+                  <!-- <p>Fun & Challenging</p> -->
                 </div>
               </div>
             </div>
@@ -898,16 +1070,16 @@
             <div class="col-xxl-5 col-xl-6 col-lg-6">
               <div class="section__title-wrapper mb-60">
                 <h2 class="section__title">
-                  Find the Right<br />Online
+                  Core Modules<br />
                   <span class="yellow-bg yellow-bg-big"
-                    >Course<img src="assets/img/shape/yellow-bg.png" alt=""
+                    ><img src="assets/img/shape/yellow-bg.png" alt=""
                   /></span>
-                  for you
+                  
                 </h2>
-                <p>
+                <!-- <p>
                   You don't have to struggle alone, you've got our assistance
                   and help.
-                </p>
+                </p> -->
               </div>
             </div>
             <!-- <div class="col-xxl-7 col-xl-6 col-lg-6">
@@ -930,31 +1102,31 @@
               class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 grid-item cat1 cat2 cat4"
             >
               <div class="course__item white-bg mb-30 fix">
-                <div class="course__thumb w-img p-relative fix">
+                <!-- <div class="course__thumb w-img p-relative fix">
                   <a>
                     <img src="assets/img/course/course-1.jpg" alt="" />
                   </a>
                   <div class="course__tag">
                     <a href="#">Art & Design</a>
                   </div>
-                </div>
+                </div> -->
                 <div class="course__content">
                   <div
                     class="course__meta d-flex align-items-center justify-content-between"
                   >
-                    <div class="course__lesson">
+                    <!-- <div class="course__lesson">
                       <span><i class="far fa-book-alt"></i>43 Lesson</span>
-                    </div>
+                    </div> -->
                     <!-- <div class="course__rating">
                       <span><i class="icon_star"></i>4.5 (44)</span>
                     </div> -->
                   </div>
                   <h3 class="course__title">
                     <a
-                      >Become a product Manager learn the skills & job.</a
+                      >Fundamentals of Marketing</a
                     >
                   </h3>
-                  <div class="course__teacher d-flex align-items-center">
+                  <!-- <div class="course__teacher d-flex align-items-center">
                     <div class="course__teacher-thumb mr-15">
                       <img
                         src="assets/img/course/teacher/teacher-1.jpg"
@@ -962,9 +1134,9 @@
                       />
                     </div>
                     <h6><a>Jim Séchen</a></h6>
-                  </div>
+                  </div> -->
                 </div>
-                <div
+                <!-- <div
                   class="course__more d-flex justify-content-between align-items-center"
                 >
                   <div class="course__status">
@@ -977,38 +1149,38 @@
                       <i class="far fa-arrow-right"></i>
                     </a>
                   </div>
-                </div>
+                </div> -->
               </div>
             </div>
             <div
               class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 grid-item cat1 cat2 cat4"
             >
               <div class="course__item white-bg mb-30 fix">
-                <div class="course__thumb w-img p-relative fix">
+                <!-- <div class="course__thumb w-img p-relative fix">
                   <a>
                     <img src="assets/img/course/course-1.jpg" alt="" />
                   </a>
                   <div class="course__tag">
                     <a href="#">Art & Design</a>
                   </div>
-                </div>
+                </div> -->
                 <div class="course__content">
                   <div
                     class="course__meta d-flex align-items-center justify-content-between"
                   >
-                    <div class="course__lesson">
+                    <!-- <div class="course__lesson">
                       <span><i class="far fa-book-alt"></i>43 Lesson</span>
-                    </div>
+                    </div> -->
                     <!-- <div class="course__rating">
                       <span><i class="icon_star"></i>4.5 (44)</span>
                     </div> -->
                   </div>
                   <h3 class="course__title">
                     <a 
-                      >Become a product Manager learn the skills & job.</a
+                      >Web Analytics</a
                     >
                   </h3>
-                  <div class="course__teacher d-flex align-items-center">
+                  <!-- <div class="course__teacher d-flex align-items-center">
                     <div class="course__teacher-thumb mr-15">
                       <img
                         src="assets/img/course/teacher/teacher-1.jpg"
@@ -1016,9 +1188,9 @@
                       />
                     </div>
                     <h6><a>Jim Séchen</a></h6>
-                  </div>
+                  </div> -->
                 </div>
-                <div
+                <!-- <div
                   class="course__more d-flex justify-content-between align-items-center"
                 >
                   <div class="course__status">
@@ -1031,38 +1203,38 @@
                       <i class="far fa-arrow-right"></i>
                     </a>
                   </div>
-                </div>
+                </div> -->
               </div>
             </div>
             <div
               class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 grid-item cat1 cat2 cat4"
             >
               <div class="course__item white-bg mb-30 fix">
-                <div class="course__thumb w-img p-relative fix">
+                <!-- <div class="course__thumb w-img p-relative fix">
                   <a>
                     <img src="assets/img/course/course-1.jpg" alt="" />
                   </a>
                   <div class="course__tag">
                     <a href="#">Art & Design</a>
                   </div>
-                </div>
+                </div> -->
                 <div class="course__content">
                   <div
                     class="course__meta d-flex align-items-center justify-content-between"
                   >
-                    <div class="course__lesson">
+                    <!-- <div class="course__lesson">
                       <span><i class="far fa-book-alt"></i>43 Lesson</span>
-                    </div>
+                    </div> -->
                     <!-- <div class="course__rating">
                       <span><i class="icon_star"></i>4.5 (44)</span>
                     </div> -->
                   </div>
                   <h3 class="course__title">
-                    <a
-                      >Become a product Manager learn the skills & job.</a
+                    <a 
+                      >Customer Centricity</a
                     >
                   </h3>
-                  <div class="course__teacher d-flex align-items-center">
+                  <!-- <div class="course__teacher d-flex align-items-center">
                     <div class="course__teacher-thumb mr-15">
                       <img
                         src="assets/img/course/teacher/teacher-1.jpg"
@@ -1070,9 +1242,9 @@
                       />
                     </div>
                     <h6><a>Jim Séchen</a></h6>
-                  </div>
+                  </div> -->
                 </div>
-                <div
+                <!-- <div
                   class="course__more d-flex justify-content-between align-items-center"
                 >
                   <div class="course__status">
@@ -1085,7 +1257,493 @@
                       <i class="far fa-arrow-right"></i>
                     </a>
                   </div>
+                </div> -->
+              </div>
+            </div>
+            <div
+              class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 grid-item cat1 cat2 cat4"
+            >
+              <div class="course__item white-bg mb-30 fix">
+                <!-- <div class="course__thumb w-img p-relative fix">
+                  <a>
+                    <img src="assets/img/course/course-1.jpg" alt="" />
+                  </a>
+                  <div class="course__tag">
+                    <a href="#">Art & Design</a>
+                  </div>
+                </div> -->
+                <div class="course__content">
+                  <div
+                    class="course__meta d-flex align-items-center justify-content-between"
+                  >
+                    <!-- <div class="course__lesson">
+                      <span><i class="far fa-book-alt"></i>43 Lesson</span>
+                    </div> -->
+                    <!-- <div class="course__rating">
+                      <span><i class="icon_star"></i>4.5 (44)</span>
+                    </div> -->
+                  </div>
+                  <h3 class="course__title">
+                    <a 
+                      >Search Engine Optimization (SEO)</a
+                    >
+                  </h3>
+                  <!-- <div class="course__teacher d-flex align-items-center">
+                    <div class="course__teacher-thumb mr-15">
+                      <img
+                        src="assets/img/course/teacher/teacher-1.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <h6><a>Jim Séchen</a></h6>
+                  </div> -->
                 </div>
+                <!-- <div
+                  class="course__more d-flex justify-content-between align-items-center"
+                >
+                  <div class="course__status">
+                    <span>Free</span>
+                  </div>
+                  <div class="course__btn">
+                    <a class="link-btn">
+                      Know Details
+                      <i class="far fa-arrow-right"></i>
+                      <i class="far fa-arrow-right"></i>
+                    </a>
+                  </div>
+                </div> -->
+              </div>
+            </div>
+            <div
+              class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 grid-item cat1 cat2 cat4"
+            >
+              <div class="course__item white-bg mb-30 fix">
+                <!-- <div class="course__thumb w-img p-relative fix">
+                  <a>
+                    <img src="assets/img/course/course-1.jpg" alt="" />
+                  </a>
+                  <div class="course__tag">
+                    <a href="#">Art & Design</a>
+                  </div>
+                </div> -->
+                <div class="course__content">
+                  <div
+                    class="course__meta d-flex align-items-center justify-content-between"
+                  >
+                    <!-- <div class="course__lesson">
+                      <span><i class="far fa-book-alt"></i>43 Lesson</span>
+                    </div> -->
+                    <!-- <div class="course__rating">
+                      <span><i class="icon_star"></i>4.5 (44)</span>
+                    </div> -->
+                  </div>
+                  <h3 class="course__title">
+                    <a 
+                      >Search Engine Marketing (SEM)</a
+                    >
+                  </h3>
+                  <!-- <div class="course__teacher d-flex align-items-center">
+                    <div class="course__teacher-thumb mr-15">
+                      <img
+                        src="assets/img/course/teacher/teacher-1.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <h6><a>Jim Séchen</a></h6>
+                  </div> -->
+                </div>
+                <!-- <div
+                  class="course__more d-flex justify-content-between align-items-center"
+                >
+                  <div class="course__status">
+                    <span>Free</span>
+                  </div>
+                  <div class="course__btn">
+                    <a class="link-btn">
+                      Know Details
+                      <i class="far fa-arrow-right"></i>
+                      <i class="far fa-arrow-right"></i>
+                    </a>
+                  </div>
+                </div> -->
+              </div>
+            </div>
+            <div
+              class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 grid-item cat1 cat2 cat4"
+            >
+              <div class="course__item white-bg mb-30 fix">
+                <!-- <div class="course__thumb w-img p-relative fix">
+                  <a>
+                    <img src="assets/img/course/course-1.jpg" alt="" />
+                  </a>
+                  <div class="course__tag">
+                    <a href="#">Art & Design</a>
+                  </div>
+                </div> -->
+                <div class="course__content">
+                  <div
+                    class="course__meta d-flex align-items-center justify-content-between"
+                  >
+                    <!-- <div class="course__lesson">
+                      <span><i class="far fa-book-alt"></i>43 Lesson</span>
+                    </div> -->
+                    <!-- <div class="course__rating">
+                      <span><i class="icon_star"></i>4.5 (44)</span>
+                    </div> -->
+                  </div>
+                  <h3 class="course__title">
+                    <a 
+                      >Integrated Marketing Strategy</a
+                    >
+                  </h3>
+                  <!-- <div class="course__teacher d-flex align-items-center">
+                    <div class="course__teacher-thumb mr-15">
+                      <img
+                        src="assets/img/course/teacher/teacher-1.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <h6><a>Jim Séchen</a></h6>
+                  </div> -->
+                </div>
+                <!-- <div
+                  class="course__more d-flex justify-content-between align-items-center"
+                >
+                  <div class="course__status">
+                    <span>Free</span>
+                  </div>
+                  <div class="course__btn">
+                    <a class="link-btn">
+                      Know Details
+                      <i class="far fa-arrow-right"></i>
+                      <i class="far fa-arrow-right"></i>
+                    </a>
+                  </div>
+                </div> -->
+              </div>
+            </div>
+            <div
+              class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 grid-item cat1 cat2 cat4"
+            >
+              <div class="course__item white-bg mb-30 fix">
+                <!-- <div class="course__thumb w-img p-relative fix">
+                  <a>
+                    <img src="assets/img/course/course-1.jpg" alt="" />
+                  </a>
+                  <div class="course__tag">
+                    <a href="#">Art & Design</a>
+                  </div>
+                </div> -->
+                <div class="course__content">
+                  <div
+                    class="course__meta d-flex align-items-center justify-content-between"
+                  >
+                    <!-- <div class="course__lesson">
+                      <span><i class="far fa-book-alt"></i>43 Lesson</span>
+                    </div> -->
+                    <!-- <div class="course__rating">
+                      <span><i class="icon_star"></i>4.5 (44)</span>
+                    </div> -->
+                  </div>
+                  <h3 class="course__title">
+                    <a 
+                      >Display Advertising</a
+                    >
+                  </h3>
+                  <!-- <div class="course__teacher d-flex align-items-center">
+                    <div class="course__teacher-thumb mr-15">
+                      <img
+                        src="assets/img/course/teacher/teacher-1.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <h6><a>Jim Séchen</a></h6>
+                  </div> -->
+                </div>
+                <!-- <div
+                  class="course__more d-flex justify-content-between align-items-center"
+                >
+                  <div class="course__status">
+                    <span>Free</span>
+                  </div>
+                  <div class="course__btn">
+                    <a class="link-btn">
+                      Know Details
+                      <i class="far fa-arrow-right"></i>
+                      <i class="far fa-arrow-right"></i>
+                    </a>
+                  </div>
+                </div> -->
+              </div>
+            </div>
+            <div
+              class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 grid-item cat1 cat2 cat4"
+            >
+              <div class="course__item white-bg mb-30 fix">
+                <!-- <div class="course__thumb w-img p-relative fix">
+                  <a>
+                    <img src="assets/img/course/course-1.jpg" alt="" />
+                  </a>
+                  <div class="course__tag">
+                    <a href="#">Art & Design</a>
+                  </div>
+                </div> -->
+                <div class="course__content">
+                  <div
+                    class="course__meta d-flex align-items-center justify-content-between"
+                  >
+                    <!-- <div class="course__lesson">
+                      <span><i class="far fa-book-alt"></i>43 Lesson</span>
+                    </div> -->
+                    <!-- <div class="course__rating">
+                      <span><i class="icon_star"></i>4.5 (44)</span>
+                    </div> -->
+                  </div>
+                  <h3 class="course__title">
+                    <a 
+                      >Social Media Marketing</a
+                    >
+                  </h3>
+                  <!-- <div class="course__teacher d-flex align-items-center">
+                    <div class="course__teacher-thumb mr-15">
+                      <img
+                        src="assets/img/course/teacher/teacher-1.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <h6><a>Jim Séchen</a></h6>
+                  </div> -->
+                </div>
+                <!-- <div
+                  class="course__more d-flex justify-content-between align-items-center"
+                >
+                  <div class="course__status">
+                    <span>Free</span>
+                  </div>
+                  <div class="course__btn">
+                    <a class="link-btn">
+                      Know Details
+                      <i class="far fa-arrow-right"></i>
+                      <i class="far fa-arrow-right"></i>
+                    </a>
+                  </div>
+                </div> -->
+              </div>
+            </div>
+            <div
+              class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 grid-item cat1 cat2 cat4"
+            >
+              <div class="course__item white-bg mb-30 fix">
+                <!-- <div class="course__thumb w-img p-relative fix">
+                  <a>
+                    <img src="assets/img/course/course-1.jpg" alt="" />
+                  </a>
+                  <div class="course__tag">
+                    <a href="#">Art & Design</a>
+                  </div>
+                </div> -->
+                <div class="course__content">
+                  <div
+                    class="course__meta d-flex align-items-center justify-content-between"
+                  >
+                    <!-- <div class="course__lesson">
+                      <span><i class="far fa-book-alt"></i>43 Lesson</span>
+                    </div> -->
+                    <!-- <div class="course__rating">
+                      <span><i class="icon_star"></i>4.5 (44)</span>
+                    </div> -->
+                  </div>
+                  <h3 class="course__title">
+                    <a 
+                      >Email Marketing</a
+                    >
+                  </h3>
+                  <!-- <div class="course__teacher d-flex align-items-center">
+                    <div class="course__teacher-thumb mr-15">
+                      <img
+                        src="assets/img/course/teacher/teacher-1.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <h6><a>Jim Séchen</a></h6>
+                  </div> -->
+                </div>
+                <!-- <div
+                  class="course__more d-flex justify-content-between align-items-center"
+                >
+                  <div class="course__status">
+                    <span>Free</span>
+                  </div>
+                  <div class="course__btn">
+                    <a class="link-btn">
+                      Know Details
+                      <i class="far fa-arrow-right"></i>
+                      <i class="far fa-arrow-right"></i>
+                    </a>
+                  </div>
+                </div> -->
+              </div>
+            </div>
+            <div
+              class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 grid-item cat1 cat2 cat4"
+            >
+              <div class="course__item white-bg mb-30 fix">
+                <!-- <div class="course__thumb w-img p-relative fix">
+                  <a>
+                    <img src="assets/img/course/course-1.jpg" alt="" />
+                  </a>
+                  <div class="course__tag">
+                    <a href="#">Art & Design</a>
+                  </div>
+                </div> -->
+                <div class="course__content">
+                  <div
+                    class="course__meta d-flex align-items-center justify-content-between"
+                  >
+                    <!-- <div class="course__lesson">
+                      <span><i class="far fa-book-alt"></i>43 Lesson</span>
+                    </div> -->
+                    <!-- <div class="course__rating">
+                      <span><i class="icon_star"></i>4.5 (44)</span>
+                    </div> -->
+                  </div>
+                  <h3 class="course__title">
+                    <a 
+                      >Soft Skills for Marketers</a
+                    >
+                  </h3>
+                  <!-- <div class="course__teacher d-flex align-items-center">
+                    <div class="course__teacher-thumb mr-15">
+                      <img
+                        src="assets/img/course/teacher/teacher-1.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <h6><a>Jim Séchen</a></h6>
+                  </div> -->
+                </div>
+                <!-- <div
+                  class="course__more d-flex justify-content-between align-items-center"
+                >
+                  <div class="course__status">
+                    <span>Free</span>
+                  </div>
+                  <div class="course__btn">
+                    <a class="link-btn">
+                      Know Details
+                      <i class="far fa-arrow-right"></i>
+                      <i class="far fa-arrow-right"></i>
+                    </a>
+                  </div>
+                </div> -->
+              </div>
+            </div>
+            <div
+              class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 grid-item cat1 cat2 cat4"
+            >
+              <div class="course__item white-bg mb-30 fix">
+                <!-- <div class="course__thumb w-img p-relative fix">
+                  <a>
+                    <img src="assets/img/course/course-1.jpg" alt="" />
+                  </a>
+                  <div class="course__tag">
+                    <a href="#">Art & Design</a>
+                  </div>
+                </div> -->
+                <div class="course__content">
+                  <div
+                    class="course__meta d-flex align-items-center justify-content-between"
+                  >
+                    <!-- <div class="course__lesson">
+                      <span><i class="far fa-book-alt"></i>43 Lesson</span>
+                    </div> -->
+                    <!-- <div class="course__rating">
+                      <span><i class="icon_star"></i>4.5 (44)</span>
+                    </div> -->
+                  </div>
+                  <h3 class="course__title">
+                    <a 
+                      >Digital Marketing Channels and Metrics</a
+                    >
+                  </h3>
+                  <!-- <div class="course__teacher d-flex align-items-center">
+                    <div class="course__teacher-thumb mr-15">
+                      <img
+                        src="assets/img/course/teacher/teacher-1.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <h6><a>Jim Séchen</a></h6>
+                  </div> -->
+                </div>
+                <!-- <div
+                  class="course__more d-flex justify-content-between align-items-center"
+                >
+                  <div class="course__status">
+                    <span>Free</span>
+                  </div>
+                  <div class="course__btn">
+                    <a class="link-btn">
+                      Know Details
+                      <i class="far fa-arrow-right"></i>
+                      <i class="far fa-arrow-right"></i>
+                    </a>
+                  </div>
+                </div> -->
+              </div>
+            </div>
+            <div
+              class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 grid-item cat1 cat2 cat4"
+            >
+              <div class="course__item white-bg mb-30 fix">
+                <!-- <div class="course__thumb w-img p-relative fix">
+                  <a>
+                    <img src="assets/img/course/course-1.jpg" alt="" />
+                  </a>
+                  <div class="course__tag">
+                    <a href="#">Art & Design</a>
+                  </div>
+                </div> -->
+                <div class="course__content">
+                  <div
+                    class="course__meta d-flex align-items-center justify-content-between"
+                  >
+                    <!-- <div class="course__lesson">
+                      <span><i class="far fa-book-alt"></i>43 Lesson</span>
+                    </div> -->
+                    <!-- <div class="course__rating">
+                      <span><i class="icon_star"></i>4.5 (44)</span>
+                    </div> -->
+                  </div>
+                  <h3 class="course__title">
+                    <a
+                      >Web Presence and Blogging</a
+                    >
+                  </h3>
+                  <!-- <div class="course__teacher d-flex align-items-center">
+                    <div class="course__teacher-thumb mr-15">
+                      <img
+                        src="assets/img/course/teacher/teacher-1.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <h6><a>Jim Séchen</a></h6>
+                  </div> -->
+                </div>
+                <!-- <div
+                  class="course__more d-flex justify-content-between align-items-center"
+                >
+                  <div class="course__status">
+                    <span>Free</span>
+                  </div>
+                  <div class="course__btn">
+                    <a class="link-btn">
+                      Know Details
+                      <i class="far fa-arrow-right"></i>
+                      <i class="far fa-arrow-right"></i>
+                    </a>
+                  </div>
+                </div> -->
               </div>
             </div>
             <!-- <div
@@ -1234,25 +1892,31 @@
                 <div
                   class="events__item-inner d-sm-flex align-items-center justify-content-between white-bg"
                 >
-                  <div class="events__content">
+                  <!-- <div class="events__content">
                     <div class="events__meta">
                       <span>Jun 14, 2022</span>
                       <span>12:00 am - 2:30 pm</span>
                       <span>New York</span>
-                    </div>
+                    </div> -->
                     <h3 class="events__title">
-                      <a
-                        >Digital transformation conference</a
-                      >
+                      <a> 1. Branding and Communication</a><br>
+                      <div class="events__content">
+                        <div class="events__meta">
+                          <span>Brand Positioning and Equity</span>
+                          <span>Brand Engagement Strategies</span>
+                          <span>Integrated Marketing Communications</span>
+                          <span>International Branding</span>
+                        </div>
+                      </div>
                     </h3>
                   </div>
-                  <div class="events__more">
+                  <!-- <div class="events__more">
                     <a class="link-btn">
                       View More
                       <i class="far fa-arrow-right"></i>
                       <i class="far fa-arrow-right"></i>
                     </a>
-                  </div>
+                  </div> -->
                 </div>
               </div>
             </div>
@@ -1770,5 +2434,6 @@
     <script src="assets/js/wow.min.js"></script>
     <script src="assets/js/imagesloaded.pkgd.min.js"></script>
     <script src="assets/js/main.js"></script>
+    <script src="./assets/js/form.js"></script>
   </body>
 </html>
