@@ -12,6 +12,17 @@ document.getElementById("myForm").addEventListener("submit", function (e) {
 
   console.log(jsonData);
 
+  var formData = new FormData(this);
+  
+  // Display form data in console
+  for (var pair of formData.entries()) {
+    console.log(pair[0] + ': ' + pair[1]);
+  }
+  
+  // Clear form fields
+  this.reset();
+
+
   // Make API call
   fetch("https://telzonmarketing-in.onrender.com/api/landing/form", {
     method: "POST",
