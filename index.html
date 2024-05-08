@@ -25,6 +25,7 @@
     <link rel="stylesheet" href="assets/css/elegantFont.css" />
     <link rel="stylesheet" href="assets/css/default.css" />
     <link rel="stylesheet" href="assets/css/style.css" />
+
   </head>
   <body>
     <!--[if lte IE 9]>
@@ -457,71 +458,67 @@
       <!-- hero area end -->
 
       <!-- Form section start -->
-
       <section>
-          <div class="col-lg-8 col-md-5 d-flex align-items-stretch ml-200 mb-4 pt-50 ml-20">
-            <div class="card p-4 w-100">
-              <h2 class="text-center mb-4">Contact Us</h2>
-              <h4 class="text-center mb-4">
-                <!-- Book Free Design Consultation Today! -->
-              </h4>
-              <form id="myForm">
-                <div class="form-group">
-                  <input
-                    type="text"
-                    name="name"
-                    class="form-control rounded"
-                    placeholder="Your Name"
-                    
-                  />
-                </div><br/>
-                <div class="form-group">
-                  <input
-                    type="email"
-                    name="email"
-                    class="form-control rounded"
-                    placeholder="Your Email"
-                    
-                  />
-                </div><br/>
-                <div class="form-group">
-                  <input
-                    type="number"
-                    name="number"
-                    class="form-control rounded"
-                    placeholder="Your Number"
-                  />
-                </div><br/>
-                <div class="form-group">
-                  <textarea
-                    name="message"
-                    class="form-control rounded"
-                    placeholder="Your Message"
-                   
-                  ></textarea>
-                </div><br/>
-                <div class="text-center">
-                  <button
-                    type="submit"
-                    
-                    class="btn btn-primary mb-4"
-                  >
-                   Submit
-                  </button>
-                  <div id="response"></div>
-                  <br/>
-                  <div class="d-flex align-items-center justify-content-center">
-                    <i
-                      class="fas fa-phone-alt mr-2"
-                      
-                    ></i>
-                    <p class="m-0">+91 9881102067</p>
-                  </div><br/>
-                </div>
-              </form>
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-lg-8 col-md-10 col-sm-12 mt-30">
+              <div class="card p-4">
+                <h2 class="text-center mb-4">Contact Us</h2>
+                <h4 class="text-center mb-4">
+                  <!-- Book Free Design Consultation Today! -->
+                </h4>
+                <form id="myForm">
+                  <div class="form-group">
+                    <input
+                      type="text"
+                      name="name"
+                      class="form-control rounded"
+                      placeholder="Your Name"
+                    /><br>
+                  </div>
+                  <div class="form-group">
+                    <input
+                      type="email"
+                      name="email"
+                      class="form-control rounded"
+                      placeholder="Your Email"
+                    /><br>
+                  </div>
+                  <div class="form-group">
+                    <input
+                      type="number"
+                      name="number"
+                      class="form-control rounded"
+                      placeholder="Your Number"
+                    /><br>
+                  </div>
+                  <div class="form-group">
+                    <textarea
+                      name="message"
+                      class="form-control rounded"
+                      placeholder="Your Message"
+                    ></textarea>
+                  </div><br>
+                  <div class="text-center">
+                    <button
+                      type="submit"
+                      class="btn btn-primary mb-4"
+                    >
+                      Submit
+                    </button>
+                    <div id="response"></div>
+                    <div class="d-flex align-items-center justify-content-center">
+                      <i class="fas fa-phone-alt mr-2"></i>
+                      <p class="m-0">+91 9881102067</p>
+                    </div>
+                  </div>
+                </form>
+              </div>
             </div>
           </div>
+        </div>
       </section>
+      
 
       <!-- form section end -->
 
@@ -2233,10 +2230,11 @@
       <!-- pricing area end -->
 
 <!-- FAQ Section -->
-<section>
-  <div class="accordion accordion-flush" id="accordionFlushExample">
-    <h2 class="text-center">Frequently Asked question</h2>
-    <div class="accordion-item pl-200 pr-200 d-lg-block">
+<section class="container">
+  <div class="accordion accordion-flush mx-md-4" id="accordionFlushExample">
+    <h2 class="text-center">Frequently Asked Questions</h2>
+    
+    <div class="accordion-item">
       <h2 class="accordion-header">
         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
           Question No.1
@@ -2245,8 +2243,9 @@
       <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
         <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
       </div>
-    </div><br/>
-    <div class="accordion-item pl-200 pr-200">
+    </div>
+    
+    <div class="accordion-item">
       <h2 class="accordion-header">
         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
           Question No.2
@@ -2255,19 +2254,23 @@
       <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
         <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
       </div>
-    </div><br/>
-    <div class="accordion-item pl-200 pr-200 pb-50">
+    </div>
+    
+    <div class="accordion-item">
       <h2 class="accordion-header">
-        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+        <button class="accordion-button collapsed mb-30" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
           Question No.3
         </button>
       </h2>
       <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
         <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
       </div>
-    </div><br/>
+    </div>
+    
   </div>
 </section>
+
+
 <!-- FAQ Section End -->
 
 

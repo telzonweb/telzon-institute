@@ -2362,6 +2362,7 @@ p {
   -moz-border-radius: 6px;
   border-radius: 6px;
   border: 2px solid #eef0f6;
+  height: 170px;
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .category__item {
@@ -2666,6 +2667,7 @@ p {
 }
 .course__content {
   padding: 25px 30px;
+  height: 100px;
 }
 .course__content-2 {
   padding-top: 25px;
@@ -8598,3 +8600,30 @@ p.checkout-coupon input[type=text]:focus {
 }
 
 /*# sourceMappingURL=style.css.map */
+/* Define breakpoints for mobile and desktop */
+/* Assuming mobile breakpoint is 768px and desktop breakpoint is 992px */
+
+/* CSS styles */
+/* CSS for adjusted classes */
+/* Responsive CSS */
+@media (max-width: 768px) {
+  .custom-col-lg-8 {
+    width: 100%;
+  }
+
+  .custom-col-md-5 {
+    width: 100%;
+  }
+
+  .custom-ml-200 {
+    margin-left: 0 !important;
+  }
+
+  .custom-ml-20 {
+    margin-left: 0 !important;
+  }
+
+  .custom-pt-50 {
+    padding-top: 20px;
+  }
+}
