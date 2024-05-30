@@ -10,7 +10,7 @@
 
 .course__content {
     padding: 20px 30px;
-    height: 200px;
+    height:200px;
 }
   
   .course-list {
@@ -60,6 +60,9 @@
     }
     .course-list {
       padding-left: 20px;
+    }
+    .course__content {
+      height: auto;
     }
     .course-container {
       padding: 15px;
