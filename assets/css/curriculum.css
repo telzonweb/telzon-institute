@@ -1,0 +1,77 @@
+.section__title-wrapper {
+    text-align: center;
+}
+
+.section__title {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.course__content {
+    padding: 20px 30px;
+    height: 200px;
+}
+  
+  .course-list {
+    padding-left: 20px; /* Adjust indentation as needed */
+  }
+  
+  .course-list li {
+    list-style-type: none; /* Remove default bullet points */
+  }
+  
+  .course-list li:before {
+    content: "\2022"; /* Use a bullet point as content */
+    color: #333; /* Adjust color as needed */
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em; /* Offset to align with the text */
+  }
+
+
+  /* practice approach css */
+
+  .section__title-wrapper {
+    margin-bottom: 60px;
+    text-align: center;
+}
+
+.section__title {
+    display: inline-block; /* Ensures it stays on one line */
+    text-align: center;
+}
+
+  
+
+@media (max-width: 768px) {
+    .course__area {
+      padding-top: 60px;
+      padding-bottom: 60px;
+    }
+    .course__title-wrapper {
+      margin-bottom: 30px;
+    }
+    .course__item {
+      margin-bottom: 20px;
+    }
+    .course__title {
+      font-size: 24px;
+    }
+    .course-list {
+      padding-left: 20px;
+    }
+    .course-container {
+      padding: 15px;
+    }
+    .course-details h3 {
+      font-size: 20px;
+    }
+    .course-details ul {
+      padding-left: 15px;
+    }
+    .course-details ul li {
+      font-size: 14px;
+    }
+  }
+  
