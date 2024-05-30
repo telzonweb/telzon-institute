@@ -1826,7 +1826,8 @@ p {
   }
 }
 .hero__title {
-  font-size: 60px;
+  font-size: 40px;
+  margin-top: 20px;
   line-height: 1;
 }
 @media only screen and (min-width: 1200px) and (max-width: 1399px) {
